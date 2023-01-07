@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.home .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+}
+
+.home .navbar .logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.home .navbar nav .menu-links {
+  display: none;
+}
+
+.home .navbar nav .menu-links.active {
+  position: absolute;
+  top: 73px;
+  left: 0;
+  display: block;
+  width: 100vw;
+  background-color: #fff;
+}
+
+.home .navbar nav .menu-links.active li {
+  padding: 2rem;
+  text-align: center;
+}
+
+.home .navbar nav .menu-links.active li a {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.home .navbar .burger div {
+  width: 2.6rem;
+  height: 0.3rem;
+  background-color: #000;
+  margin: 0.6rem;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.home .navbar .active-burger div:nth-child(1) {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+          transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.home .navbar .active-burger div:nth-child(2) {
+  opacity: 0;
+}
+
+.home .navbar .active-burger div:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(-6px, -6px);
+          transform: rotate(45deg) translate(-6px, -6px);
+}
+
+.home .header {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100vh;
+  max-height: calc(100vh - 105px);
+  background-image: url("../img/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.home .about-us img {
+  display: none;
+}
+
+.home .about-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.home .about-us p {
+  padding: 2rem;
+  font-size: 1.6rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.home .our-teachers {
+  padding: 2rem 0;
+}
+
+.home .our-teachers h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.home .our-teachers .teachers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .our-teachers .teachers div {
+  margin: 2rem;
+}
+
+.home .our-teachers .teachers div img {
+  width: 90vw;
+  max-width: 500px;
+}
+
+.home .our-teachers .teachers div h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+.home .our-courses {
+  padding: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: auto;
+}
+
+.home .our-courses h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.home .our-courses table {
+  padding: 2rem;
+}
+
+.home .our-courses table tr th {
+  border: 1px solid #525252;
+  padding: 2rem;
+  font-size: 1.6rem;
+}
+
+.home .our-courses table tr td {
+  border: 1px solid #525252;
+  padding: 2rem;
+  font-size: 1.4rem;
+}
+
+.home .form-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f8fa;
+}
+
+.home .form-section .form-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.home .form-section .form-wrapper .fw-top-txt p:nth-of-type(1), .home .form-section .form-wrapper .fw-top-txt p:nth-of-type(2) {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.home .form-section .form-wrapper .fw-top-txt p:nth-of-type(1) {
+  color: #333333;
+}
+
+.home .form-section .form-wrapper .fw-top-txt p:nth-of-type(2) {
+  color: #7b94a5;
+}
+
+.home .form-section .form-wrapper .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85vw;
+  max-width: 580px;
+}
+
+.home .form-section .form-wrapper .form .email,
+.home .form-section .form-wrapper .form .message,
+.home .form-section .form-wrapper .form .name,
+.home .form-section .form-wrapper .form .phone {
+  background-color: #fff;
+  color: #7b94a5;
+  border: none;
+  padding: 1rem;
+  font-size: 1.4rem;
+  -webkit-box-shadow: -10px 10px 22px 3px rgba(234, 234, 234, 0.86);
+          box-shadow: -10px 10px 22px 3px rgba(234, 234, 234, 0.86);
+  width: 85vw;
+  max-width: 580px;
+}
+
+.home .form-section .form-wrapper .form .email:focus,
+.home .form-section .form-wrapper .form .message:focus,
+.home .form-section .form-wrapper .form .name:focus,
+.home .form-section .form-wrapper .form .phone:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.home .form-section .form-wrapper .form .email {
+  margin-top: 1.25rem;
+}
+
+.home .form-section .form-wrapper .form .phone {
+  margin-top: 1.25rem;
+  width: 85vw;
+  max-width: 580px;
+}
+
+.home .form-section .form-wrapper .form .message {
+  margin-top: 1.25rem;
+  width: 85vw;
+  height: 163px;
+  max-width: 580px;
+  resize: none;
+}
+
+.home .form-section .form-wrapper .form .form-submit {
+  font-size: 1.4rem;
+  background-color: #3458e4;
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1.8rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.home .form-section .form-wrapper .form .form-submit:active {
+  color: #7c94f6;
+  background-color: #fff;
+  border: 1px solid #7c94f6;
+}
+
+.home footer {
+  padding: 2rem;
+  font-size: 1.2rem;
+  background-color: #001927;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+@media all and (min-width: 1024px) {
+  .home .navbar nav .menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .home .navbar nav .menu-links li a {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    color: #000;
+    font-weight: 600;
+    margin: 0 1rem;
+  }
+  .home .navbar nav .menu-links li a:hover {
+    color: #5f6b72;
+  }
+  .home .navbar nav .menu-links li a.menu-button {
+    background-color: #3458e4;
+    border-radius: 12px;
+    color: #fff;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .home .navbar nav .menu-links li a.menu-button:hover {
+    background-color: #7c94f6;
+  }
+  .home .navbar .burger {
+    display: none;
+  }
+  .home .about-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4rem 2rem;
+  }
+  .home .about-us h2 {
+    font-size: 2.8rem;
+  }
+  .home .about-us img {
+    display: block;
+    margin-right: 1rem;
+  }
+  .home .our-teachers h2 {
+    font-size: 2.8rem;
+  }
+  .home .our-teachers .teachers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 100vw;
+  }
+  .home .our-courses h2 {
+    font-size: 2.8rem;
+  }
+  .home .our-courses .courses {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    max-width: 100vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */
